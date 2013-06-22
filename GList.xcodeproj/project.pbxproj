@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A773DA291776037100430137 /* GLListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A773DA281776037100430137 /* GLListViewController.m */; };
+		A773DA2D177603A900430137 /* GLCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A773DA2C177603A900430137 /* GLCameraViewController.m */; };
+		A773DA3117760C9900430137 /* sampleGroceryList.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A773DA3017760C9900430137 /* sampleGroceryList.jpg */; };
 		A79E9B8C1775F8C60068566B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79E9B8B1775F8C60068566B /* UIKit.framework */; };
 		A79E9B8E1775F8C60068566B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79E9B8D1775F8C60068566B /* Foundation.framework */; };
 		A79E9B901775F8C60068566B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79E9B8F1775F8C60068566B /* CoreGraphics.framework */; };
@@ -21,6 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A773DA271776037100430137 /* GLListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLListViewController.h; sourceTree = "<group>"; };
+		A773DA281776037100430137 /* GLListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLListViewController.m; sourceTree = "<group>"; };
+		A773DA2B177603A900430137 /* GLCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCameraViewController.h; sourceTree = "<group>"; };
+		A773DA2C177603A900430137 /* GLCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLCameraViewController.m; sourceTree = "<group>"; };
+		A773DA3017760C9900430137 /* sampleGroceryList.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sampleGroceryList.jpg; sourceTree = "<group>"; };
 		A79E9B871775F8C60068566B /* GList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A79E9B8B1775F8C60068566B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A79E9B8D1775F8C60068566B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,6 +61,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A773DA2E177603B100430137 /* GL Camera View */ = {
+			isa = PBXGroup;
+			children = (
+				A773DA2B177603A900430137 /* GLCameraViewController.h */,
+				A773DA2C177603A900430137 /* GLCameraViewController.m */,
+			);
+			name = "GL Camera View";
+			sourceTree = "<group>";
+		};
+		A773DA2F177603C500430137 /* GL List View */ = {
+			isa = PBXGroup;
+			children = (
+				A773DA271776037100430137 /* GLListViewController.h */,
+				A773DA281776037100430137 /* GLListViewController.m */,
+			);
+			name = "GL List View";
+			sourceTree = "<group>";
+		};
+		A773DA3217760D1600430137 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				A773DA3317760D2500430137 /* opencv */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		A773DA3317760D2500430137 /* opencv */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = opencv;
+			path = external/opencv;
+			sourceTree = "<group>";
+		};
 		A79E9B7C1775F8C60068566B = {
 			isa = PBXGroup;
 			children = (
@@ -83,11 +125,14 @@
 		A79E9B911775F8C60068566B /* GList */ = {
 			isa = PBXGroup;
 			children = (
+				A773DA3217760D1600430137 /* External */,
 				A79E9B9A1775F8C60068566B /* GLAppDelegate.h */,
 				A79E9B9B1775F8C60068566B /* GLAppDelegate.m */,
 				A79E9BA31775F8C60068566B /* MainStoryboard.storyboard */,
 				A79E9BA61775F8C60068566B /* GLViewController.h */,
 				A79E9BA71775F8C60068566B /* GLViewController.m */,
+				A773DA2F177603C500430137 /* GL List View */,
+				A773DA2E177603B100430137 /* GL Camera View */,
 				A79E9B921775F8C60068566B /* Supporting Files */,
 			);
 			path = GList;
@@ -96,6 +141,7 @@
 		A79E9B921775F8C60068566B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A773DA3017760C9900430137 /* sampleGroceryList.jpg */,
 				A79E9B931775F8C60068566B /* GList-Info.plist */,
 				A79E9B941775F8C60068566B /* InfoPlist.strings */,
 				A79E9B971775F8C60068566B /* main.m */,
@@ -164,6 +210,7 @@
 				A79E9BA01775F8C60068566B /* Default@2x.png in Resources */,
 				A79E9BA21775F8C60068566B /* Default-568h@2x.png in Resources */,
 				A79E9BA51775F8C60068566B /* MainStoryboard.storyboard in Resources */,
+				A773DA3117760C9900430137 /* sampleGroceryList.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +224,8 @@
 				A79E9B981775F8C60068566B /* main.m in Sources */,
 				A79E9B9C1775F8C60068566B /* GLAppDelegate.m in Sources */,
 				A79E9BA81775F8C60068566B /* GLViewController.m in Sources */,
+				A773DA291776037100430137 /* GLListViewController.m in Sources */,
+				A773DA2D177603A900430137 /* GLCameraViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +307,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GList/GList-Prefix.pch";
 				INFOPLIST_FILE = "GList/GList-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -269,6 +319,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GList/GList-Prefix.pch";
 				INFOPLIST_FILE = "GList/GList-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -293,6 +344,7 @@
 				A79E9BAD1775F8C60068566B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
